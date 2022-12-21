@@ -126,7 +126,7 @@ document.querySelector(".fa-arrow-left").addEventListener("click", () => {
   if (prevWord) {
     searchInput.value = prevWord;
     fetchApi(prevWord);
-  };
+  }else document.querySelector(".fa-arrow-left").style.display = 'none';
 });
     
 searchInput.addEventListener('keyup', e => {
